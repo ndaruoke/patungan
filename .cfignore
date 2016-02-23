@@ -1,0 +1,4 @@
+composer.lock  
+htdocs/vendor/
+htdocs/bower_components/
+htdocs/node_modules/

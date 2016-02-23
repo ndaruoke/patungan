@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 2048M
+  instances: 1
+  domain: mybluemix.net
+  name: e-patungan
+  host: e-patungan
+  disk_quota: 1024M
+  services:
+  - Redis Cloud-06
+  - ClearDB MySQL Database-px
+  - Memcached Cloud-be
+  buildpack: php_buildpack
+  env:
+    CF_STAGING_TIMEOUT: 15
+    CF_STARTUP_TIMEOUT: 15
