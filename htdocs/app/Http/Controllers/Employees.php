@@ -35,6 +35,9 @@ class Employees extends Controller {
         $employee->email = $request->input('email');
         $employee->contact_number = $request->input('contact_number');
         $employee->position = $request->input('position');
+        $employee->active = $request->input('active');
+        $employee->created_at = $request->input('created_at');
+        $employee->updated_at = $request->input('updated_at');
         $employee->save();
 
         return 'Employee record successfully created with id ' . $employee->id;
@@ -64,6 +67,9 @@ class Employees extends Controller {
         $employee->email = $request->input('email');
         $employee->contact_number = $request->input('contact_number');
         $employee->position = $request->input('position');
+        $employee->active = $request->input('active');
+        $employee->created_at = $request->input('created_at');
+        $employee->updated_at = $request->input('updated_at');
         $employee->save();
 
         return "Sucess updating employee #" . $employee->id;

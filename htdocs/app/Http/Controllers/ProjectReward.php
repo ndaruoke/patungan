@@ -31,21 +31,17 @@ class ProjectReward extends Controller
     public function store(Request $request) {
         $projectReward = new ProjectReward;
 
-        $projectReward->name = $request->input('name');
-        $projectReward->summary = $request->input('summary');
-        $projectReward->detail = $request->input('detail');
-        $projectReward->category = $request->input('category');
-        $projectReward->amount_funding = $request->input('amount_funding');
-        $projectReward->funding_duration = $request->input('funding_duration');
-        $projectReward->reward = $request->input('reward');
-        $projectReward->time = $request->input('time');
-        $projectReward->status = $request->input('status');
-        $projectReward->image = $request->input('image');
-        $projectReward->video = $request->input('video');
-        $projectReward->home = $request->input('home');
-        $projectReward->update = $request->input('update');
-        $projectReward->user_id = $request->input('user_id');
-        $projectReward->featured = $request->input('featured');
+        $projectReward->project_id = $request->input('project_id');
+        $projectReward->reward_1 = $request->input('reward_1');
+        $projectReward->reward_2 = $request->input('reward_2');
+        $projectReward->reward_3 = $request->input('reward_3');
+        $projectReward->reward_4 = $request->input('reward_4');
+        $projectReward->reward_5 = $request->input('reward_5');
+        $projectReward->count_1 = $request->input('count_1');
+        $projectReward->count_2 = $request->input('count_2');
+        $projectReward->count_3 = $request->input('count_3');
+        $projectReward->count_4 = $request->input('count_4');
+        $projectReward->count_5 = $request->input('count_5');
         $projectReward->active = $request->input('active');
         $projectReward->created_at = $request->input('created_at');
         $projectReward->updated_at = $request->input('updated_at');
@@ -74,21 +70,17 @@ class ProjectReward extends Controller
     public function update(Request $request, $id) {
         $projectReward = ProjectReward::find($id);
 
-        $projectReward->name = $request->input('name');
-        $projectReward->summary = $request->input('summary');
-        $projectReward->detail = $request->input('detail');
-        $projectReward->category = $request->input('category');
-        $projectReward->amount_funding = $request->input('amount_funding');
-        $projectReward->funding_duration = $request->input('funding_duration');
-        $projectReward->reward = $request->input('reward');
-        $projectReward->time = $request->input('time');
-        $projectReward->status = $request->input('status');
-        $projectReward->image = $request->input('image');
-        $projectReward->video = $request->input('video');
-        $projectReward->home = $request->input('home');
-        $projectReward->update = $request->input('update');
-        $projectReward->user_id = $request->input('user_id');
-        $projectReward->featured = $request->input('featured');
+        $projectReward->project_id = $request->input('project_id');
+        $projectReward->reward_1 = $request->input('reward_1');
+        $projectReward->reward_2 = $request->input('reward_2');
+        $projectReward->reward_3 = $request->input('reward_3');
+        $projectReward->reward_4 = $request->input('reward_4');
+        $projectReward->reward_5 = $request->input('reward_5');
+        $projectReward->count_1 = $request->input('count_1');
+        $projectReward->count_2 = $request->input('count_2');
+        $projectReward->count_3 = $request->input('count_3');
+        $projectReward->count_4 = $request->input('count_4');
+        $projectReward->count_5 = $request->input('count_5');
         $projectReward->active = $request->input('active');
         $projectReward->created_at = $request->input('created_at');
         $projectReward->updated_at = $request->input('updated_at');
